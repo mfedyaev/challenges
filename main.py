@@ -34,7 +34,7 @@ def call_calculator():
 
 if __name__ == '__main__':
 
-    #call_camelcase()
-    #call_iptonum()
+    call_camelcase()
+    call_iptonum()
     call_calculator()
 
