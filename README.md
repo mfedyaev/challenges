@@ -1,1 +1,1 @@
-Python challenges with solutions
+Python challenges with solutions.
