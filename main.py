@@ -1,4 +1,4 @@
-import camelcase, iptonum
+import camelcase, iptonum, calculator
 
 def call_camelcase():
     print(f'Convert snake_case to CamelCase')
@@ -24,9 +24,17 @@ def call_iptonum():
     print(f'3232235777:   {iptonum.numtoip_ipaddr(3232235777)}')
     print(f'')
 
+def call_calculator():
+    print(f'Calculator')
+    print(f'15 * 3: {calculator.calculator("15 * 3")}')
+    print(f'80 / 4: {calculator.calculator("80 / 4")}')
+    print(f'')
+
+
 
 if __name__ == '__main__':
 
-#    call_camelcase()
-    call_iptonum()
+    #call_camelcase()
+    #call_iptonum()
+    call_calculator()
 

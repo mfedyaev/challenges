@@ -8,17 +8,16 @@ def iptonum(ip):
 
 def numtoip(num):
     numbin = bin(num).replace("0b","")
-    print(f'binary: {numbin}')
+#    print(f'binary: {numbin}')
     nums = [numbin[i:i+8] for i in range(0,len(numbin),8)]
-    print(nums)
+#    print(nums)
     ip = ""
     i = 0
     for octet in nums:
-        if i < 3:
+        while i < 3:
             ip += str(int(octet,2)) + "."
-        else:
-            ip += str(int(octet,2))
-        i += 1
+            i += 1
+        ip += str(int(octet,2))
     return ip
 
 import ipaddress
