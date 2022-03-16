@@ -2,22 +2,20 @@
 
 def iptonum(ip):
     numbin = ""
-    for octet in ip.split("."):
-        numbin += bin(int(octet)).replace("0b","").zfill(8)
+    for octet_dec in ip.split("."):
+        numbin += bin(int(octet_dec)).replace("0b","").zfill(8)
     return int(numbin, 2)
 
 def numtoip(num):
     numbin = bin(num).replace("0b","")
-#    print(f'binary: {numbin}')
     nums = [numbin[i:i+8] for i in range(0,len(numbin),8)]
-#    print(nums)
     ip = ""
     i = 0
-    for octet in nums:
+    for octet_bin in nums:
         while i < 3:
-            ip += str(int(octet,2)) + "."
+            ip += str(int(octet_bin,2)) + "."
             i += 1
-        ip += str(int(octet,2))
+        ip += str(int(octet_bin,2))
     return ip
 
 import ipaddress
