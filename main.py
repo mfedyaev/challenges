@@ -1,14 +1,14 @@
-import camelcase, iptonum, calculator
+import camelcase, iptonum, calculator, recursion_factorial
 
 def call_camelcase():
-    print(f'Convert snake_case to CamelCase')
+    print(f'### Convert snake_case to CamelCase')
     print(f'Output algorithm: {camelcase.algo("_welcome__to-my_paradise_-")}')
     print(f'Output replace:   {camelcase.replace("_welcome__to-my_paradise_")}')
     print(f'Output regexp:    {camelcase.regexp("_welcome__to-my_paradise_")}')
     print(f'')
 
 def call_iptonum():
-    print(f'Convert IP to Num')
+    print(f'### Convert IP to Num')
     print(f'172.0.10.20: {iptonum.iptonum("172.0.10.20")}')
     print(f'192.168.1.1: {iptonum.iptonum("192.168.1.1")}')
     print(f'Convert Num to IP')
@@ -25,11 +25,16 @@ def call_iptonum():
     print(f'')
 
 def call_calculator():
-    print(f'Calculator')
+    print(f'### Calculator')
     print(f'15 * 3: {calculator.calculator("15 * 3")}')
     print(f'80 / 4: {calculator.calculator("80 / 4")}')
     print(f'')
 
+def call_factorial():
+    print(f'### Factorial')
+    print(f'Factorial of 5:  {recursion_factorial.factorial(5)}')
+    print(f'Factorial of 15: {recursion_factorial.factorial(15)}')
+    print(f'')
 
 
 if __name__ == '__main__':
@@ -37,4 +42,5 @@ if __name__ == '__main__':
     call_camelcase()
     call_iptonum()
     call_calculator()
+    call_factorial()
 
