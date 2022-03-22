@@ -1,4 +1,5 @@
 import camelcase, iptonum, calculator, recursion_factorial
+import two_nums_add_to_k
 
 def call_camelcase():
     print(f'### Convert snake_case to CamelCase')
@@ -36,6 +37,13 @@ def call_factorial():
     print(f'Factorial of 15: {recursion_factorial.factorial(15)}')
     print(f'')
 
+def call_find_sum():
+    print(f'### Factorial')
+    print(f'Two number add to k, [1, 2, 3, 4], 5):      {two_nums_add_to_k.find_sum([1, 2, 3, 4], 5)}')
+    print(f'Two number add to k, [16, 2, 33, -4], 29):  {two_nums_add_to_k.find_sum([16, 2, 33, 4], 37)}')
+    print(f'Two number add to k, [100, 2, 7, 14], 5):   {two_nums_add_to_k.find_sum([100, 2, 7, 14], 5)}')
+    print(f'')
+
 
 if __name__ == '__main__':
 
@@ -43,4 +51,5 @@ if __name__ == '__main__':
     call_iptonum()
     call_calculator()
     call_factorial()
+    call_find_sum()
 
