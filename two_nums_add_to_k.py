@@ -8,7 +8,7 @@ def find_sum(lst, k):
         j = i + 1
         while j < len(lst):
             if lst[i] + lst[j] == k:
-                lst_out = [lst[i],lst[j]]
+                lst_out = [lst[i], lst[j]]
                 break
             else:
                 j += 1
