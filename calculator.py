@@ -5,6 +5,7 @@ operation = {
     '*': lambda a, b: a * b
 }
 
+# This version is supposed to be faster because dict is not created every time - ?
 def calculator2(expression):
     allowed = "+-/*"
     if not any(sign in expression for sign in allowed):
