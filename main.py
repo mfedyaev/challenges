@@ -66,6 +66,22 @@ def call_palindrome_reverse_slice():
     print(f'Is 442552244 a palindrome: {palindrome.is_palindrome_reverse_slice(4425552244)}')
     print(f'')
 
+def call_is_palindrome_short():
+    print(f'### Palindrome - short')
+    print(f'Is 313 a palindrome: {palindrome.is_palindrome_short(313)}')
+    print(f'Is 4422552244 a palindrome: {palindrome.is_palindrome_short(4422552244)}')
+    print(f'Is 442252244 a palindrome: {palindrome.is_palindrome_short(442252244)}')
+    print(f'Is 442552244 a palindrome: {palindrome.is_palindrome_short(4425552244)}')
+    print(f'')
+
+def call_is_palindrome_half():
+    print(f'### Palindrome - half')
+    print(f'Is 313 a palindrome: {palindrome.is_palindrome_half(313)}')
+    print(f'Is 4422552244 a palindrome: {palindrome.is_palindrome_half(4422552244)}')
+    print(f'Is 442252244 a palindrome: {palindrome.is_palindrome_half(442252244)}')
+    print(f'Is 442552244 a palindrome: {palindrome.is_palindrome_half(4425552244)}')
+    print(f'')
+
 
 if __name__ == '__main__':
 
@@ -79,3 +95,5 @@ if __name__ == '__main__':
     call_calculator2()
     #print(f' Timeit Calc1: {timeit.timeit("call_calculator1()", "from __main__ import call_calculator1", number=10000)}')
     #print(f' Timeit Calc2: {timeit.timeit("call_calculator2()", "from __main__ import call_calculator2", number=10000)}')
+    call_is_palindrome_short()
+    call_is_palindrome_half()
